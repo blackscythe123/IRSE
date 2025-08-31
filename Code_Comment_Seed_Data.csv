@@ -1,4 +1,4 @@
-Comments,Surrounding Code Context,Class
+comment_text,code_snippet,label
 /*test 529*/,"-10.   int res = 0;
 -9.   CURL *curl = NULL;
 -8.   FILE *hd_src = NULL;
