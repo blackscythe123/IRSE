@@ -1,0 +1,43 @@
+{
+  "experiment_info": {
+    "model": "microsoft/codebert-base-mlm",
+    "max_length": 512,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "epochs": 10,
+    "original_dataset_size": 8326,
+    "combined_dataset_size": 8826
+  },
+  "results": {
+    "Part A: Original \u2192 Original Test": {
+      "accuracy": 0.9195678271308524,
+      "f1": 0.9193416802804185,
+      "precision": 0.9192568315533414,
+      "recall": 0.9195678271308524
+    },
+    "Part B: Combined \u2192 Combined Test": {
+      "accuracy": 0.9178935447338619,
+      "f1": 0.9166231423291671,
+      "precision": 0.919283493400151,
+      "recall": 0.9178935447338619
+    },
+    "Cross: Original \u2192 Combined Test": {
+      "accuracy": 0.9144960362400906,
+      "f1": 0.9141137924836161,
+      "precision": 0.9141282026034631,
+      "recall": 0.9144960362400906
+    },
+    "Cross: Combined \u2192 Original Test": {
+      "accuracy": 0.918967587034814,
+      "f1": 0.9176069471728617,
+      "precision": 0.9202806446832948,
+      "recall": 0.918967587034814
+    }
+  },
+  "summary": {
+    "best_f1_score": 0.9193416802804185,
+    "best_experiment": "Part A: Original \u2192 Original Test",
+    "improvement_from_augmentation": -0.2718537951251432,
+    "task_completion": "SUCCESS"
+  }
+}
