@@ -1,0 +1,2426 @@
+Comments,Surrounding Code Context,Class,Source,Intended_Label
+// Process array elements by doubling values,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Useful,Rule_Generated,Useful
+/* Free allocated memory to prevent leaks */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+/* Calculate the sum of two integers */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Useful,Rule_Generated,Useful
+// Free allocated memory to prevent leaks,"-7.   void process_array(int arr[], int size) {
+-6.       for(int i = 0; i < size; i++) {
+-5.           arr[i] = arr[i] * 2;
+-4.       }
+-3.   }",Useful,Rule_Generated,Useful
+/* TEMPORARY */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to initialize variables to default values */,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Useful,Rule_Generated,Useful
+/* Calculate string length without using strlen */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Useful,Rule_Generated,Useful
+/* Function to calculate string length without using strlen */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+/* Function to free allocated memory to prevent leaks */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* draft code */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// debugging,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* unused 750 */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 786 */,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Free allocated memory to prevent leaks,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Useful,Rule_Generated,Useful
+/* QUICK HACK */,"-3.   void process_array(int arr[], int size) {
+-2.       for(int i = 0; i < size; i++) {
+-1.           arr[i] = arr[i] * 2;
+0.       }
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* Open file in read mode with error checking */,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Useful,Rule_Generated,Useful
+/* DEBUGGING */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Check for null pointer before access,"-5.   int string_length(char *str) {
+-4.       int count = 0;
+-3.       while(str[count] != '\0') count++;
+-2.       return count;
+-1.   }",Useful,Rule_Generated,Useful
+// Process array elements by doubling values,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Useful,Rule_Generated,Useful
+// TODO: debug info,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMPORARY */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Allocate memory for array of given size,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Useful,Rule_Generated,Useful
+// TODO: draft code,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-9.   int calculate_sum(int a, int b) {
+-8.       int result = a + b;
+-7.       return result;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* Check for null pointer before access */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Useful,Rule_Generated,Useful
+/* Free allocated memory to prevent leaks */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+/* Function to swap two integer values using pointers */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+/* Function to validate input parameters for safety */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Useful,Rule_Generated,Useful
+/* Function to calculate string length without using strlen */,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+/* Validate input parameters for safety */,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Useful,Rule_Generated,Useful
+// Free allocated memory to prevent leaks,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Useful,Rule_Generated,Useful
+/* This function process array elements by doubling values */,"-3.   void process_array(int arr[], int size) {
+-2.       for(int i = 0; i < size; i++) {
+-1.           arr[i] = arr[i] * 2;
+0.       }
+1.   }",Useful,Rule_Generated,Useful
+// Free allocated memory to prevent leaks,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Useful,Rule_Generated,Useful
+/* temp fix 765 */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// debugging,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* This function validate input parameters for safety */,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Useful,Rule_Generated,Useful
+/* Calculate the sum of two integers */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+/* Allocate memory for array of given size */,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Useful,Rule_Generated,Useful
+// Purpose: Process array elements by doubling values,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Useful,Rule_Generated,Useful
+/* This function validate input parameters for safety */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Useful,Rule_Generated,Useful
+/* old version */,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: old version,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Calculate the sum of two integers,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Useful,Rule_Generated,Useful
+// Open file in read mode with error checking,"-5.   int string_length(char *str) {
+-4.       int count = 0;
+-3.       while(str[count] != '\0') count++;
+-2.       return count;
+-1.   }",Useful,Rule_Generated,Useful
+// TODO: fix later,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Allocate memory for array of given size,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* Free allocated memory to prevent leaks */,"-9.   FILE* open_file(const char* filename) {
+-8.       FILE *fp = fopen(filename, ""r"");
+-7.       if(fp == NULL) printf(""Error\n"");
+-6.       return fp;
+-5.   }",Useful,Rule_Generated,Useful
+// Purpose: Initialize variables to default values,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Useful,Rule_Generated,Useful
+// TODO: test code,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: unused,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later 294 */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate string length without using strlen */,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Useful,Rule_Generated,Useful
+/* PLACEHOLDER */,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Swap two integer values using pointers */,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Useful,Rule_Generated,Useful
+/* Initialize variables to default values */,"-9.   FILE* open_file(const char* filename) {
+-8.       FILE *fp = fopen(filename, ""r"");
+-7.       if(fp == NULL) printf(""Error\n"");
+-6.       return fp;
+-5.   }",Useful,Rule_Generated,Useful
+/* Validate input parameters for safety */,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Useful,Rule_Generated,Useful
+/* quick hack 309 */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later 787 */,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Calculate the sum of two integers,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function allocate memory for array of given size */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Useful,Rule_Generated,Useful
+/* TODO: fix later */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: FIX LATER */,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to free allocated memory to prevent leaks */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+/* Process array elements by doubling values */,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Useful,Rule_Generated,Useful
+/* Function to process array elements by doubling values */,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Useful,Rule_Generated,Useful
+/* temporary 803 */,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: test code,"-3.   FILE* open_file(const char* filename) {
+-2.       FILE *fp = fopen(filename, ""r"");
+-1.       if(fp == NULL) printf(""Error\n"");
+0.       return fp;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate string length without using strlen,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+/* Allocate memory for array of given size */,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+/* This function calculate string length without using strlen */,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+/* TODO: fix later 142 */,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// temporary,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: placeholder,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Swap two integer values using pointers,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Useful,Rule_Generated,Useful
+// Purpose: Calculate string length without using strlen,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+/* TODO: fix later */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: temporary,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* Open file in read mode with error checking */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+/* remove this */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMP FIX */,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Process array elements by doubling values,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Useful,Rule_Generated,Useful
+/* This function allocate memory for array of given size */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+/* OLD VERSION */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Process array elements by doubling values */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function free allocated memory to prevent leaks */,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+/* old version 171 */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* This function process array elements by doubling values */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Useful,Rule_Generated,Useful
+/* old version 813 */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Initialize variables to default values,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Useful,Rule_Generated,Useful
+/* old version */,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* This function initialize variables to default values */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+// unused,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to allocate memory for array of given size */,"-3.   FILE* open_file(const char* filename) {
+-2.       FILE *fp = fopen(filename, ""r"");
+-1.       if(fp == NULL) printf(""Error\n"");
+0.       return fp;
+1.   }",Useful,Rule_Generated,Useful
+// debugging,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// Open file in read mode with error checking,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Useful,Rule_Generated,Useful
+// temp fix,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// old version,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Initialize variables to default values,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Useful,Rule_Generated,Useful
+// test code,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* This function check for null pointer before access */,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Useful,Rule_Generated,Useful
+/* UNUSED */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: TODO: fix later,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* This function process array elements by doubling values */,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Useful,Rule_Generated,Useful
+/* unused 179 */,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* remove this */,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Initialize variables to default values,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+// Purpose: Initialize variables to default values,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Useful,Rule_Generated,Useful
+// old version,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Validate input parameters for safety,"-4.   int* create_array(int size) {
+-3.       int *arr = malloc(size * sizeof(int));
+-2.       if(arr == NULL) return NULL;
+-1.       return arr;
+0.   }",Useful,Rule_Generated,Useful
+// TODO: quick hack,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// Check for null pointer before access,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Useful,Rule_Generated,Useful
+/* test code 498 */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Check for null pointer before access,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+/* This function initialize variables to default values */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+// Initialize variables to default values,"-10.   FILE* open_file(const char* filename) {
+-9.       FILE *fp = fopen(filename, ""r"");
+-8.       if(fp == NULL) printf(""Error\n"");
+-7.       return fp;
+-6.   }",Useful,Rule_Generated,Useful
+// Purpose: Process array elements by doubling values,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Useful,Rule_Generated,Useful
+// TODO: remove this,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate string length without using strlen,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+// Calculate the sum of two integers,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Useful,Rule_Generated,Useful
+// Open file in read mode with error checking,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Useful,Rule_Generated,Useful
+/* Function to check for null pointer before access */,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Useful,Rule_Generated,Useful
+/* Function to swap two integer values using pointers */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Useful,Rule_Generated,Useful
+/* This function process array elements by doubling values */,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Useful,Rule_Generated,Useful
+/* debug info */,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* This function process array elements by doubling values */,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Useful,Rule_Generated,Useful
+/* This function calculate string length without using strlen */,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Useful,Rule_Generated,Useful
+/* Function to free allocated memory to prevent leaks */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+/* debugging 543 */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Initialize variables to default values,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Useful,Rule_Generated,Useful
+/* DRAFT CODE */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* debug info 706 */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Process array elements by doubling values,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Useful,Rule_Generated,Useful
+// TODO: remove this,"-3.   void process_array(int arr[], int size) {
+-2.       for(int i = 0; i < size; i++) {
+-1.           arr[i] = arr[i] * 2;
+0.       }
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 463 */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Initialize variables to default values,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Useful,Rule_Generated,Useful
+// TODO: temp fix,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// Process array elements by doubling values,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+/* temp fix 695 */,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* OLD VERSION */,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* quick hack 413 */,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate string length without using strlen */,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Useful,Rule_Generated,Useful
+// Open file in read mode with error checking,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+/* DEBUG INFO */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to open file in read mode with error checking */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+/* Process array elements by doubling values */,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Useful,Rule_Generated,Useful
+/* Process array elements by doubling values */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: debug info,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: unused,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Process array elements by doubling values,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Useful,Rule_Generated,Useful
+/* UNUSED */,"-9.   int calculate_sum(int a, int b) {
+-8.       int result = a + b;
+-7.       return result;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* This function swap two integer values using pointers */,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Useful,Rule_Generated,Useful
+/* This function allocate memory for array of given size */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Useful,Rule_Generated,Useful
+// Purpose: Free allocated memory to prevent leaks,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Useful,Rule_Generated,Useful
+/* draft code 539 */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* Validate input parameters for safety */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Useful,Rule_Generated,Useful
+// temp fix,"-7.   void process_array(int arr[], int size) {
+-6.       for(int i = 0; i < size; i++) {
+-5.           arr[i] = arr[i] * 2;
+-4.       }
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Swap two integer values using pointers */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+// quick hack,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// debugging,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* Initialize variables to default values */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Useful,Rule_Generated,Useful
+// Process array elements by doubling values,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Useful,Rule_Generated,Useful
+/* This function process array elements by doubling values */,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Useful,Rule_Generated,Useful
+// TODO: unused,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* QUICK HACK */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* Validate input parameters for safety */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Useful,Rule_Generated,Useful
+// test code,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* This function process array elements by doubling values */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Useful,Rule_Generated,Useful
+// TODO: placeholder,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: temp fix,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* old version 441 */,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Calculate string length without using strlen,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Useful,Rule_Generated,Useful
+/* TEMP FIX */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to calculate string length without using strlen */,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Useful,Rule_Generated,Useful
+/* placeholder */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// old version,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Process array elements by doubling values,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Useful,Rule_Generated,Useful
+/* This function calculate the sum of two integers */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Useful,Rule_Generated,Useful
+/* PLACEHOLDER */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Allocate memory for array of given size,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Useful,Rule_Generated,Useful
+/* DEBUG INFO */,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// unused,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Initialize variables to default values,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Useful,Rule_Generated,Useful
+/* Function to allocate memory for array of given size */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* test code 389 */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: FIX LATER */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// temporary,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* Initialize variables to default values */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Useful,Rule_Generated,Useful
+// old version,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* This function free allocated memory to prevent leaks */,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+// TODO: debugging,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: draft code,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMP FIX */,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary */,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Check for null pointer before access,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Useful,Rule_Generated,Useful
+/* Function to calculate the sum of two integers */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+// remove this,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// draft code,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Validate input parameters for safety,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+// draft code,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* quick hack */,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Allocate memory for array of given size,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Useful,Rule_Generated,Useful
+/* temp fix 534 */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Initialize variables to default values,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Useful,Rule_Generated,Useful
+/* DRAFT CODE */,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to initialize variables to default values */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+// Purpose: Validate input parameters for safety,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Useful,Rule_Generated,Useful
+// temporary,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Allocate memory for array of given size */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+/* Function to validate input parameters for safety */,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* Function to process array elements by doubling values */,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+// Open file in read mode with error checking,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+// TODO: TODO: fix later,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Check for null pointer before access */,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Useful,Rule_Generated,Useful
+/* placeholder */,"-7.   void process_array(int arr[], int size) {
+-6.       for(int i = 0; i < size; i++) {
+-5.           arr[i] = arr[i] * 2;
+-4.       }
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: placeholder,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* TEST CODE */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Allocate memory for array of given size,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Useful,Rule_Generated,Useful
+/* debugging */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// debugging,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* UNUSED */,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* Initialize variables to default values */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Useful,Rule_Generated,Useful
+/* quick hack 133 */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 975 */,"-3.   void process_array(int arr[], int size) {
+-2.       for(int i = 0; i < size; i++) {
+-1.           arr[i] = arr[i] * 2;
+0.       }
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* test code 507 */,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// debugging,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to calculate the sum of two integers */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Useful,Rule_Generated,Useful
+/* This function allocate memory for array of given size */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+/* Function to open file in read mode with error checking */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+// Process array elements by doubling values,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+/* TODO: fix later */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 702 */,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: test code,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Check for null pointer before access,"-9.   FILE* open_file(const char* filename) {
+-8.       FILE *fp = fopen(filename, ""r"");
+-7.       if(fp == NULL) printf(""Error\n"");
+-6.       return fp;
+-5.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Useful,Rule_Generated,Useful
+/* Function to free allocated memory to prevent leaks */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+// Purpose: Check for null pointer before access,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+/* debug info */,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Allocate memory for array of given size,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Useful,Rule_Generated,Useful
+/* OLD VERSION */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging */,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Initialize variables to default values,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: unused,"-4.   void process_array(int arr[], int size) {
+-3.       for(int i = 0; i < size; i++) {
+-2.           arr[i] = arr[i] * 2;
+-1.       }
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* old version 420 */,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate string length without using strlen,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+// TODO: temp fix,"-10.   FILE* open_file(const char* filename) {
+-9.       FILE *fp = fopen(filename, ""r"");
+-8.       if(fp == NULL) printf(""Error\n"");
+-7.       return fp;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* This function process array elements by doubling values */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Useful,Rule_Generated,Useful
+/* This function validate input parameters for safety */,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Useful,Rule_Generated,Useful
+/* temporary */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging 880 */,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to validate input parameters for safety */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* debug info 880 */,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Swap two integer values using pointers,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Useful,Rule_Generated,Useful
+/* Swap two integer values using pointers */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Useful,Rule_Generated,Useful
+// Purpose: Initialize variables to default values,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Useful,Rule_Generated,Useful
+/* Function to calculate string length without using strlen */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+// Calculate the sum of two integers,"-5.   int string_length(char *str) {
+-4.       int count = 0;
+-3.       while(str[count] != '\0') count++;
+-2.       return count;
+-1.   }",Useful,Rule_Generated,Useful
+/* Function to allocate memory for array of given size */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+// TODO: draft code,"-4.   int* create_array(int size) {
+-3.       int *arr = malloc(size * sizeof(int));
+-2.       if(arr == NULL) return NULL;
+-1.       return arr;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Calculate string length without using strlen,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Useful,Rule_Generated,Useful
+/* placeholder 783 */,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* draft code */,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to swap two integer values using pointers */,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Useful,Rule_Generated,Useful
+// Purpose: Calculate the sum of two integers,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Useful,Rule_Generated,Useful
+// Purpose: Swap two integer values using pointers,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+/* debugging */,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging 982 */,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: debug info,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// test code,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* debugging */,"-3.   FILE* open_file(const char* filename) {
+-2.       FILE *fp = fopen(filename, ""r"");
+-1.       if(fp == NULL) printf(""Error\n"");
+0.       return fp;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: placeholder,"-4.   void process_array(int arr[], int size) {
+-3.       for(int i = 0; i < size; i++) {
+-2.           arr[i] = arr[i] * 2;
+-1.       }
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate string length without using strlen,"-5.   void swap_values(int *a, int *b) {
+-4.       int temp = *a;
+-3.       *a = *b;
+-2.       *b = temp;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function free allocated memory to prevent leaks */,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Useful,Rule_Generated,Useful
+// debug info,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Process array elements by doubling values,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Useful,Rule_Generated,Useful
+// Allocate memory for array of given size,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+/* DRAFT CODE */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// temp fix,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* unused 746 */,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* This function calculate string length without using strlen */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Useful,Rule_Generated,Useful
+/* unused */,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* This function allocate memory for array of given size */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+/* UNUSED */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+// draft code,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* placeholder */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* DEBUG INFO */,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Open file in read mode with error checking,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+/* Function to calculate string length without using strlen */,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Useful,Rule_Generated,Useful
+/* REMOVE THIS */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate string length without using strlen */,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Useful,Rule_Generated,Useful
+/* QUICK HACK */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Validate input parameters for safety,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Useful,Rule_Generated,Useful
+/* TODO: fix later */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix 910 */,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* This function initialize variables to default values */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Useful,Rule_Generated,Useful
+// quick hack,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// Open file in read mode with error checking,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* DEBUGGING */,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* This function calculate string length without using strlen */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: fix later,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* Check for null pointer before access */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+// Free allocated memory to prevent leaks,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* This function calculate string length without using strlen */,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* OLD VERSION */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// Validate input parameters for safety,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Useful,Rule_Generated,Useful
+/* remove this */,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* Process array elements by doubling values */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: placeholder,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: remove this,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate string length without using strlen */,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Useful,Rule_Generated,Useful
+/* Swap two integer values using pointers */,"-5.   int string_length(char *str) {
+-4.       int count = 0;
+-3.       while(str[count] != '\0') count++;
+-2.       return count;
+-1.   }",Useful,Rule_Generated,Useful
+// Purpose: Check for null pointer before access,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* Function to calculate the sum of two integers */,"-10.   FILE* open_file(const char* filename) {
+-9.       FILE *fp = fopen(filename, ""r"");
+-8.       if(fp == NULL) printf(""Error\n"");
+-7.       return fp;
+-6.   }",Useful,Rule_Generated,Useful
+/* debugging 894 */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate the sum of two integers,"-6.   void process_array(int arr[], int size) {
+-5.       for(int i = 0; i < size; i++) {
+-4.           arr[i] = arr[i] * 2;
+-3.       }
+-2.   }",Useful,Rule_Generated,Useful
+// TODO: debugging,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* This function free allocated memory to prevent leaks */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* OLD VERSION */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later */,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* This function free allocated memory to prevent leaks */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Useful,Rule_Generated,Useful
+// Purpose: Initialize variables to default values,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* quick hack */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to calculate the sum of two integers */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Useful,Rule_Generated,Useful
+// Purpose: Check for null pointer before access,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Useful,Rule_Generated,Useful
+// Purpose: Allocate memory for array of given size,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+// Calculate the sum of two integers,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Useful,Rule_Generated,Useful
+/* PLACEHOLDER */,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to open file in read mode with error checking */,"-6.   int* create_array(int size) {
+-5.       int *arr = malloc(size * sizeof(int));
+-4.       if(arr == NULL) return NULL;
+-3.       return arr;
+-2.   }",Useful,Rule_Generated,Useful
+/* quick hack 227 */,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// old version,"-4.   int* create_array(int size) {
+-3.       int *arr = malloc(size * sizeof(int));
+-2.       if(arr == NULL) return NULL;
+-1.       return arr;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* placeholder */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* This function initialize variables to default values */,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Useful,Rule_Generated,Useful
+/* remove this */,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: unused,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* unused 143 */,"-3.   void process_array(int arr[], int size) {
+-2.       for(int i = 0; i < size; i++) {
+-1.           arr[i] = arr[i] * 2;
+0.       }
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// placeholder,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* test code */,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* old version */,"-5.   void process_array(int arr[], int size) {
+-4.       for(int i = 0; i < size; i++) {
+-3.           arr[i] = arr[i] * 2;
+-2.       }
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: remove this,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to free allocated memory to prevent leaks */,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Useful,Rule_Generated,Useful
+/* temporary */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// debug info,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// temporary,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* Check for null pointer before access */,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Useful,Rule_Generated,Useful
+/* DEBUG INFO */,"-5.   int string_length(char *str) {
+-4.       int count = 0;
+-3.       while(str[count] != '\0') count++;
+-2.       return count;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: fix later,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Allocate memory for array of given size,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Useful,Rule_Generated,Useful
+/* TEST CODE */,"-7.   void process_array(int arr[], int size) {
+-6.       for(int i = 0; i < size; i++) {
+-5.           arr[i] = arr[i] * 2;
+-4.       }
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* PLACEHOLDER */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: old version,"-9.   int calculate_sum(int a, int b) {
+-8.       int result = a + b;
+-7.       return result;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+// draft code,"-4.   FILE* open_file(const char* filename) {
+-3.       FILE *fp = fopen(filename, ""r"");
+-2.       if(fp == NULL) printf(""Error\n"");
+-1.       return fp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* UNUSED */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Swap two integer values using pointers,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Useful,Rule_Generated,Useful
+// Free allocated memory to prevent leaks,"-10.   FILE* open_file(const char* filename) {
+-9.       FILE *fp = fopen(filename, ""r"");
+-8.       if(fp == NULL) printf(""Error\n"");
+-7.       return fp;
+-6.   }",Useful,Rule_Generated,Useful
+// Calculate string length without using strlen,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Useful,Rule_Generated,Useful
+// debugging,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later 740 */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Not Useful,Rule_Generated,Not Useful
+// Free allocated memory to prevent leaks,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* This function swap two integer values using pointers */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Useful,Rule_Generated,Useful
+/* draft code */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMP FIX */,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Not Useful,Rule_Generated,Not Useful
+/* This function check for null pointer before access */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Useful,Rule_Generated,Useful
+// TODO: temporary,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Calculate the sum of two integers,"-3.   void swap_values(int *a, int *b) {
+-2.       int temp = *a;
+-1.       *a = *b;
+0.       *b = temp;
+1.   }",Useful,Rule_Generated,Useful
+/* unused 308 */,"-4.   int* create_array(int size) {
+-3.       int *arr = malloc(size * sizeof(int));
+-2.       if(arr == NULL) return NULL;
+-1.       return arr;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* debug info 426 */,"-8.   FILE* open_file(const char* filename) {
+-7.       FILE *fp = fopen(filename, ""r"");
+-6.       if(fp == NULL) printf(""Error\n"");
+-5.       return fp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* placeholder */,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: debugging,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to calculate the sum of two integers */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Useful,Rule_Generated,Useful
+// temporary,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// temporary,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: unused,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+// placeholder,"-9.   int calculate_sum(int a, int b) {
+-8.       int result = a + b;
+-7.       return result;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* test code 151 */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* quick hack */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to process array elements by doubling values */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* Initialize variables to default values */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function calculate string length without using strlen */,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+/* PLACEHOLDER */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* Swap two integer values using pointers */,"-1.   void swap_values(int *a, int *b) {
+0.       int temp = *a;
+1.       *a = *b;
+2.       *b = temp;
+3.   }",Useful,Rule_Generated,Useful
+// placeholder,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* placeholder */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: unused,"-8.   int calculate_sum(int a, int b) {
+-7.       int result = a + b;
+-6.       return result;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* This function calculate string length without using strlen */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+/* draft code 857 */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* debug info 676 */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* remove this */,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* debug info */,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMP FIX */,"-3.   FILE* open_file(const char* filename) {
+-2.       FILE *fp = fopen(filename, ""r"");
+-1.       if(fp == NULL) printf(""Error\n"");
+0.       return fp;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Validate input parameters for safety,"-7.   FILE* open_file(const char* filename) {
+-6.       FILE *fp = fopen(filename, ""r"");
+-5.       if(fp == NULL) printf(""Error\n"");
+-4.       return fp;
+-3.   }",Useful,Rule_Generated,Useful
+// TODO: fix later,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Open file in read mode with error checking */,"-1.   int calculate_sum(int a, int b) {
+0.       int result = a + b;
+1.       return result;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: fix later,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* debug info */,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to free allocated memory to prevent leaks */,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+// TODO: remove this,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix 890 */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to open file in read mode with error checking */,"-3.   FILE* open_file(const char* filename) {
+-2.       FILE *fp = fopen(filename, ""r"");
+-1.       if(fp == NULL) printf(""Error\n"");
+0.       return fp;
+1.   }",Useful,Rule_Generated,Useful
+/* Function to process array elements by doubling values */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+/* remove this 591 */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* DEBUGGING */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later */,"-4.   int* create_array(int size) {
+-3.       int *arr = malloc(size * sizeof(int));
+-2.       if(arr == NULL) return NULL;
+-1.       return arr;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* unused 771 */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* This function open file in read mode with error checking */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Useful,Rule_Generated,Useful
+/* TODO: FIX LATER */,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* Open file in read mode with error checking */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Useful,Rule_Generated,Useful
+/* Open file in read mode with error checking */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+/* debug info */,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// Free allocated memory to prevent leaks,"-8.   int string_length(char *str) {
+-7.       int count = 0;
+-6.       while(str[count] != '\0') count++;
+-5.       return count;
+-4.   }",Useful,Rule_Generated,Useful
+/* temp fix 304 */,"-3.   int* create_array(int size) {
+-2.       int *arr = malloc(size * sizeof(int));
+-1.       if(arr == NULL) return NULL;
+0.       return arr;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* This function allocate memory for array of given size */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+// Purpose: Swap two integer values using pointers,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Useful,Rule_Generated,Useful
+/* unused 290 */,"-10.   void process_array(int arr[], int size) {
+-9.       for(int i = 0; i < size; i++) {
+-8.           arr[i] = arr[i] * 2;
+-7.       }
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* draft code */,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Not Useful,Rule_Generated,Not Useful
+/* TEMP FIX */,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* quick hack */,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// temp fix,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// draft code,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* old version 627 */,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Not Useful,Rule_Generated,Not Useful
+// Swap two integer values using pointers,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* Function to calculate the sum of two integers */,"-5.   int* create_array(int size) {
+-4.       int *arr = malloc(size * sizeof(int));
+-3.       if(arr == NULL) return NULL;
+-2.       return arr;
+-1.   }",Useful,Rule_Generated,Useful
+/* quick hack 437 */,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to process array elements by doubling values */,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Useful,Rule_Generated,Useful
+// Purpose: Allocate memory for array of given size,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Useful,Rule_Generated,Useful
+/* temp fix 614 */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// remove this,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: FIX LATER */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// placeholder,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Free allocated memory to prevent leaks,"-1.   void process_array(int arr[], int size) {
+0.       for(int i = 0; i < size; i++) {
+1.           arr[i] = arr[i] * 2;
+2.       }
+3.   }",Useful,Rule_Generated,Useful
+/* Validate input parameters for safety */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function validate input parameters for safety */,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Useful,Rule_Generated,Useful
+/* placeholder */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: debugging,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// Purpose: Free allocated memory to prevent leaks,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Useful,Rule_Generated,Useful
+// Purpose: Free allocated memory to prevent leaks,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Useful,Rule_Generated,Useful
+/* Function to initialize variables to default values */,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Useful,Rule_Generated,Useful
+// Purpose: Calculate the sum of two integers,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Useful,Rule_Generated,Useful
+// Purpose: Allocate memory for array of given size,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Useful,Rule_Generated,Useful
+// TODO: fix later,"-6.   int calculate_sum(int a, int b) {
+-5.       int result = a + b;
+-4.       return result;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: old version,"-4.   int string_length(char *str) {
+-3.       int count = 0;
+-2.       while(str[count] != '\0') count++;
+-1.       return count;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate string length without using strlen */,"-9.   int* create_array(int size) {
+-8.       int *arr = malloc(size * sizeof(int));
+-7.       if(arr == NULL) return NULL;
+-6.       return arr;
+-5.   }",Useful,Rule_Generated,Useful
+// placeholder,"-2.   void process_array(int arr[], int size) {
+-1.       for(int i = 0; i < size; i++) {
+0.           arr[i] = arr[i] * 2;
+1.       }
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* UNUSED */,"-10.   int calculate_sum(int a, int b) {
+-9.       int result = a + b;
+-8.       return result;
+-7.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: temporary,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary */,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Open file in read mode with error checking,"-4.   int calculate_sum(int a, int b) {
+-3.       int result = a + b;
+-2.       return result;
+-1.   }",Useful,Rule_Generated,Useful
+/* This function check for null pointer before access */,"-9.   int calculate_sum(int a, int b) {
+-8.       int result = a + b;
+-7.       return result;
+-6.   }",Useful,Rule_Generated,Useful
+// Purpose: Calculate the sum of two integers,"-10.   int string_length(char *str) {
+-9.       int count = 0;
+-8.       while(str[count] != '\0') count++;
+-7.       return count;
+-6.   }",Useful,Rule_Generated,Useful
+// Calculate the sum of two integers,"-7.   int* create_array(int size) {
+-6.       int *arr = malloc(size * sizeof(int));
+-5.       if(arr == NULL) return NULL;
+-4.       return arr;
+-3.   }",Useful,Rule_Generated,Useful
+/* Function to validate input parameters for safety */,"-6.   FILE* open_file(const char* filename) {
+-5.       FILE *fp = fopen(filename, ""r"");
+-4.       if(fp == NULL) printf(""Error\n"");
+-3.       return fp;
+-2.   }",Useful,Rule_Generated,Useful
+// temporary,"-1.   FILE* open_file(const char* filename) {
+0.       FILE *fp = fopen(filename, ""r"");
+1.       if(fp == NULL) printf(""Error\n"");
+2.       return fp;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to initialize variables to default values */,"-2.   int string_length(char *str) {
+-1.       int count = 0;
+0.       while(str[count] != '\0') count++;
+1.       return count;
+2.   }",Useful,Rule_Generated,Useful
+/* This function initialize variables to default values */,"-10.   void swap_values(int *a, int *b) {
+-9.       int temp = *a;
+-8.       *a = *b;
+-7.       *b = temp;
+-6.   }",Useful,Rule_Generated,Useful
+// TODO: temp fix,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Not Useful,Rule_Generated,Not Useful
+/* old version 252 */,"-5.   FILE* open_file(const char* filename) {
+-4.       FILE *fp = fopen(filename, ""r"");
+-3.       if(fp == NULL) printf(""Error\n"");
+-2.       return fp;
+-1.   }",Not Useful,Rule_Generated,Not Useful
+// temporary,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: test code,"-8.   void swap_values(int *a, int *b) {
+-7.       int temp = *a;
+-6.       *a = *b;
+-5.       *b = temp;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+// Initialize variables to default values,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Useful,Rule_Generated,Useful
+// TODO: temp fix,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* Function to calculate the sum of two integers */,"-9.   void swap_values(int *a, int *b) {
+-8.       int temp = *a;
+-7.       *a = *b;
+-6.       *b = temp;
+-5.   }",Useful,Rule_Generated,Useful
+// Allocate memory for array of given size,"-1.   int* create_array(int size) {
+0.       int *arr = malloc(size * sizeof(int));
+1.       if(arr == NULL) return NULL;
+2.       return arr;
+3.   }",Useful,Rule_Generated,Useful
+// Check for null pointer before access,"-2.   FILE* open_file(const char* filename) {
+-1.       FILE *fp = fopen(filename, ""r"");
+0.       if(fp == NULL) printf(""Error\n"");
+1.       return fp;
+2.   }",Useful,Rule_Generated,Useful
+// Open file in read mode with error checking,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Useful,Rule_Generated,Useful
+/* TEMPORARY */,"-9.   int string_length(char *str) {
+-8.       int count = 0;
+-7.       while(str[count] != '\0') count++;
+-6.       return count;
+-5.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 665 */,"-7.   int string_length(char *str) {
+-6.       int count = 0;
+-5.       while(str[count] != '\0') count++;
+-4.       return count;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+/* placeholder 764 */,"-4.   void swap_values(int *a, int *b) {
+-3.       int temp = *a;
+-2.       *a = *b;
+-1.       *b = temp;
+0.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: placeholder,"-6.   void swap_values(int *a, int *b) {
+-5.       int temp = *a;
+-4.       *a = *b;
+-3.       *b = temp;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+/* temporary 479 */,"-3.   int calculate_sum(int a, int b) {
+-2.       int result = a + b;
+-1.       return result;
+0.   }",Not Useful,Rule_Generated,Not Useful
+/* Swap two integer values using pointers */,"-10.   int* create_array(int size) {
+-9.       int *arr = malloc(size * sizeof(int));
+-8.       if(arr == NULL) return NULL;
+-7.       return arr;
+-6.   }",Useful,Rule_Generated,Useful
+// quick hack,"-2.   void swap_values(int *a, int *b) {
+-1.       int temp = *a;
+0.       *a = *b;
+1.       *b = temp;
+2.   }",Not Useful,Rule_Generated,Not Useful
+// draft code,"-7.   void swap_values(int *a, int *b) {
+-6.       int temp = *a;
+-5.       *a = *b;
+-4.       *b = temp;
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: quick hack,"-2.   int* create_array(int size) {
+-1.       int *arr = malloc(size * sizeof(int));
+0.       if(arr == NULL) return NULL;
+1.       return arr;
+2.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later 850 */,"-3.   int string_length(char *str) {
+-2.       int count = 0;
+-1.       while(str[count] != '\0') count++;
+0.       return count;
+1.   }",Not Useful,Rule_Generated,Not Useful
+/* TODO: fix later */,"-8.   void process_array(int arr[], int size) {
+-7.       for(int i = 0; i < size; i++) {
+-6.           arr[i] = arr[i] * 2;
+-5.       }
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* Calculate the sum of two integers */,"-10.   FILE* open_file(const char* filename) {
+-9.       FILE *fp = fopen(filename, ""r"");
+-8.       if(fp == NULL) printf(""Error\n"");
+-7.       return fp;
+-6.   }",Useful,Rule_Generated,Useful
+// Allocate memory for array of given size,"-8.   int* create_array(int size) {
+-7.       int *arr = malloc(size * sizeof(int));
+-6.       if(arr == NULL) return NULL;
+-5.       return arr;
+-4.   }",Useful,Rule_Generated,Useful
+/* REMOVE THIS */,"-7.   int calculate_sum(int a, int b) {
+-6.       int result = a + b;
+-5.       return result;
+-4.   }",Not Useful,Rule_Generated,Not Useful
+/* temp fix */,"-1.   int string_length(char *str) {
+0.       int count = 0;
+1.       while(str[count] != '\0') count++;
+2.       return count;
+3.   }",Not Useful,Rule_Generated,Not Useful
+/* TEST CODE */,"-2.   int calculate_sum(int a, int b) {
+-1.       int result = a + b;
+0.       return result;
+1.   }",Not Useful,Rule_Generated,Not Useful
+// TODO: test code,"-6.   int string_length(char *str) {
+-5.       int count = 0;
+-4.       while(str[count] != '\0') count++;
+-3.       return count;
+-2.   }",Not Useful,Rule_Generated,Not Useful
+// Free allocated memory to prevent leaks,"-9.   void process_array(int arr[], int size) {
+-8.       for(int i = 0; i < size; i++) {
+-7.           arr[i] = arr[i] * 2;
+-6.       }
+-5.   }",Useful,Rule_Generated,Useful
+// TODO: remove this,"-7.   void process_array(int arr[], int size) {
+-6.       for(int i = 0; i < size; i++) {
+-5.           arr[i] = arr[i] * 2;
+-4.       }
+-3.   }",Not Useful,Rule_Generated,Not Useful
+// unused,"-5.   int calculate_sum(int a, int b) {
+-4.       int result = a + b;
+-3.       return result;
+-2.   }",Not Useful,Rule_Generated,Not Useful
