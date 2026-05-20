@@ -1,5 +1,0 @@
-Experiment,Accuracy,F1-Score,Precision,Recall,F1 (%)
-Part A: Original → Original Test,0.9196,0.9193,0.9193,0.9196,91.93%
-Part B: Combined → Combined Test,0.9179,0.9166,0.9193,0.9179,91.66%
-Cross: Original → Combined Test,0.9145,0.9141,0.9141,0.9145,91.41%
-Cross: Combined → Original Test,0.9190,0.9176,0.9203,0.9190,91.76%
